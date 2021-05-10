@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_disabled"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/ic_image"
+        android:scaleType="fitXY"
+        android:id="@+id/imageViewAdd"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Image name"
+        android:id="@+id/inputImageName"
+        android:layout_marginStart="40dp"
+        android:maxLines="1"
+        android:lines="1"
+        android:singleLine="true"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@+id/imageViewAdd"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewProgress"
+        android:layout_below="@+id/inputImageName"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:text="0.0%"
+        android:gravity="center"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/textViewProgress"/>
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="match_parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/teal_700"
+        android:backgroundTint="@color/teal_700"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="upload" />
+
+
+</RelativeLayout>
